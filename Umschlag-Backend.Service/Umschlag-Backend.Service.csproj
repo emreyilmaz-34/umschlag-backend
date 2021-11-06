@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Umschlag-Backend.Data\Umschlag-Backend.Data.csproj" />
+    <ProjectReference Include="..\Umschlag-Backend.Core\Umschlag-Backend.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Umschlag_Backend.Service</RootNamespace>
+  </PropertyGroup>
+
+</Project>
