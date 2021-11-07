@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Umschlag_Backend.Core.Repositories
 {
-    public interface IRepsitory<TEntity> where TEntity : class
+    public interface IRepository<TEntity> where TEntity : class
     {
         Task<TEntity> GetByIdAsync(int id);
         Task<IEnumerable<TEntity>> GetAllAsync();
