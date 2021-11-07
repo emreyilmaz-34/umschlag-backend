@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 
 namespace Umschlag_Backend.Core.Repositories
 {
-    interface ICategoryRepository : IRepository<Category>
+    interface IProductRepository : IRepository<Product>
     {
-        Task<Category> GetWithProductByIdAsync(int productId); // retunrn category with product
+        Task<Product> GetWithCategoryByIdAsync(int productId); //  retunrn product with category
     }
 }
