@@ -6,7 +6,7 @@ namespace Umschlag_Backend.Core
         public string Name { get; set; }
         public int Stock { get; set; }
         public decimal Price { get; set; }
-        public string CategoryId { get; set; }
+        public int CategoryId { get; set; }
         public bool IsDeleted { get; set; }
         public string InnerBarcode { get; set; }
         public virtual Category Category { get; set; }

@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Umschlag_Backend.Core;
 using Umschlag_Backend.Data.Configurations;
+using Umschlag_Backend.Data.Seed;
 
 namespace Umschlag_Backend.Data
 {
@@ -14,6 +15,9 @@ namespace Umschlag_Backend.Data
         {
             modelBuilder.ApplyConfiguration(new ProductConfiguration());
             modelBuilder.ApplyConfiguration(new CategoryConfiguration());
+
+            modelBuilder.ApplyConfiguration(new ProductSeed(new int[] { 1, 2 }));
+            modelBuilder.ApplyConfiguration(new CategorySeed(new int[] { 1, 2 }));
         }
     }
 }
