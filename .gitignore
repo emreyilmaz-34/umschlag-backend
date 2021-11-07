@@ -1,0 +1,10 @@
+*.vscode
+Umschlag-Backend.API/bin/
+Umschlag-Backend.API/obj/Debug/
+Umschlag-Backend.Core/bin/
+Umschlag-Backend.Core/obj/Debug/
+Umschlag-Backend.Data/bin/
+Umschlag-Backend.Data/obj/Debug/
+Umschlag-Backend.Service/bin/
+Umschlag-Backend.Service/obj/Debug/
+*.DS_Store
