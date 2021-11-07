@@ -3,7 +3,7 @@ using System.Collections.ObjectModel;
 
 namespace Umschlag_Backend.Core
 {
-    class Category
+    public class Category
     {
         public Category()
         {
