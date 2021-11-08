@@ -5,7 +5,7 @@ using Umschlag_Backend.Data.Repositories;
 
 namespace Umschlag_Backend.Data.UnitOfWorks
 {
-    class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly AppDbContext _context;
         private ProductRepository _productRepository;
