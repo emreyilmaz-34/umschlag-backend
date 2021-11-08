@@ -3,7 +3,7 @@ using Umschlag_Backend.Core.Repositories;
 
 namespace Umschlag_Backend.Core.UnitOfWork
 {
-    internal interface IUnitOfWork
+    public interface IUnitOfWork
     {
         IProductRepository Products { get; }
         ICategoryRepository Categories { get; }
