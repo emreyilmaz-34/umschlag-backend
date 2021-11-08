@@ -1,39 +1,41 @@
 {
   "format": 1,
   "restore": {
-    "/Users/emre/work/umschlag-backend/Umschlag-Backend.API/Umschlag-Backend.API.csproj": {}
+    "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.API\\Umschlag-Backend.API.csproj": {}
   },
   "projects": {
-    "/Users/emre/work/umschlag-backend/Umschlag-Backend.API/Umschlag-Backend.API.csproj": {
+    "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.API\\Umschlag-Backend.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/emre/work/umschlag-backend/Umschlag-Backend.API/Umschlag-Backend.API.csproj",
+        "projectUniqueName": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.API\\Umschlag-Backend.API.csproj",
         "projectName": "Umschlag-Backend.API",
-        "projectPath": "/Users/emre/work/umschlag-backend/Umschlag-Backend.API/Umschlag-Backend.API.csproj",
-        "packagesPath": "/Users/emre/.nuget/packages/",
-        "outputPath": "/Users/emre/work/umschlag-backend/Umschlag-Backend.API/obj/",
+        "projectPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.API\\Umschlag-Backend.API.csproj",
+        "packagesPath": "C:\\Users\\EMRE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/emre/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\EMRE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/emre/work/umschlag-backend/Umschlag-Backend.Core/Umschlag-Backend.Core.csproj": {
-                "projectPath": "/Users/emre/work/umschlag-backend/Umschlag-Backend.Core/Umschlag-Backend.Core.csproj"
+              "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Core\\Umschlag-Backend.Core.csproj": {
+                "projectPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Core\\Umschlag-Backend.Core.csproj"
               },
-              "/Users/emre/work/umschlag-backend/Umschlag-Backend.Data/Umschlag-Backend.Data.csproj": {
-                "projectPath": "/Users/emre/work/umschlag-backend/Umschlag-Backend.Data/Umschlag-Backend.Data.csproj"
+              "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Data\\Umschlag-Backend.Data.csproj": {
+                "projectPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Data\\Umschlag-Backend.Data.csproj"
               },
-              "/Users/emre/work/umschlag-backend/Umschlag-Backend.Service/Umschlag-Backend.Service.csproj": {
-                "projectPath": "/Users/emre/work/umschlag-backend/Umschlag-Backend.Service/Umschlag-Backend.Service.csproj"
+              "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Service\\Umschlag-Backend.Service.csproj": {
+                "projectPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Service\\Umschlag-Backend.Service.csproj"
               }
             }
           }
@@ -85,26 +87,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/emre/work/umschlag-backend/Umschlag-Backend.Core/Umschlag-Backend.Core.csproj": {
+    "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Core\\Umschlag-Backend.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/emre/work/umschlag-backend/Umschlag-Backend.Core/Umschlag-Backend.Core.csproj",
+        "projectUniqueName": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Core\\Umschlag-Backend.Core.csproj",
         "projectName": "Umschlag-Backend.Core",
-        "projectPath": "/Users/emre/work/umschlag-backend/Umschlag-Backend.Core/Umschlag-Backend.Core.csproj",
-        "packagesPath": "/Users/emre/.nuget/packages/",
-        "outputPath": "/Users/emre/work/umschlag-backend/Umschlag-Backend.Core/obj/",
+        "projectPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Core\\Umschlag-Backend.Core.csproj",
+        "packagesPath": "C:\\Users\\EMRE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/emre/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\EMRE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -137,34 +141,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/emre/work/umschlag-backend/Umschlag-Backend.Data/Umschlag-Backend.Data.csproj": {
+    "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Data\\Umschlag-Backend.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/emre/work/umschlag-backend/Umschlag-Backend.Data/Umschlag-Backend.Data.csproj",
+        "projectUniqueName": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Data\\Umschlag-Backend.Data.csproj",
         "projectName": "Umschlag-Backend.Data",
-        "projectPath": "/Users/emre/work/umschlag-backend/Umschlag-Backend.Data/Umschlag-Backend.Data.csproj",
-        "packagesPath": "/Users/emre/.nuget/packages/",
-        "outputPath": "/Users/emre/work/umschlag-backend/Umschlag-Backend.Data/obj/",
+        "projectPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Data\\Umschlag-Backend.Data.csproj",
+        "packagesPath": "C:\\Users\\EMRE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/emre/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\EMRE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/emre/work/umschlag-backend/Umschlag-Backend.Core/Umschlag-Backend.Core.csproj": {
-                "projectPath": "/Users/emre/work/umschlag-backend/Umschlag-Backend.Core/Umschlag-Backend.Core.csproj"
+              "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Core\\Umschlag-Backend.Core.csproj": {
+                "projectPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Core\\Umschlag-Backend.Core.csproj"
               }
             }
           }
@@ -181,19 +187,19 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.12, )"
+              "version": "[5.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.12, )"
+              "version": "[5.0.11, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.12, )"
+              "version": "[5.0.11, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
@@ -215,37 +221,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/emre/work/umschlag-backend/Umschlag-Backend.Service/Umschlag-Backend.Service.csproj": {
+    "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Service\\Umschlag-Backend.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/emre/work/umschlag-backend/Umschlag-Backend.Service/Umschlag-Backend.Service.csproj",
+        "projectUniqueName": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Service\\Umschlag-Backend.Service.csproj",
         "projectName": "Umschlag-Backend.Service",
-        "projectPath": "/Users/emre/work/umschlag-backend/Umschlag-Backend.Service/Umschlag-Backend.Service.csproj",
-        "packagesPath": "/Users/emre/.nuget/packages/",
-        "outputPath": "/Users/emre/work/umschlag-backend/Umschlag-Backend.Service/obj/",
+        "projectPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Service\\Umschlag-Backend.Service.csproj",
+        "packagesPath": "C:\\Users\\EMRE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/emre/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\EMRE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/emre/work/umschlag-backend/Umschlag-Backend.Core/Umschlag-Backend.Core.csproj": {
-                "projectPath": "/Users/emre/work/umschlag-backend/Umschlag-Backend.Core/Umschlag-Backend.Core.csproj"
+              "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Core\\Umschlag-Backend.Core.csproj": {
+                "projectPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Core\\Umschlag-Backend.Core.csproj"
               },
-              "/Users/emre/work/umschlag-backend/Umschlag-Backend.Data/Umschlag-Backend.Data.csproj": {
-                "projectPath": "/Users/emre/work/umschlag-backend/Umschlag-Backend.Data/Umschlag-Backend.Data.csproj"
+              "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Data\\Umschlag-Backend.Data.csproj": {
+                "projectPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Data\\Umschlag-Backend.Data.csproj"
               }
             }
           }
@@ -274,7 +282,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ay1/Nz9cs0tNC6zUERkaeAmnjUqEkshig/0LzBsEiONSos0QbQdWV9/yE8XnxIjm2XGfqGeFOZqbeMeVwvuirQ==",
+  "dgSpecHash": "C0DEeqbHp+N8XJJyYdaJh1gwikjRd3pSifIv2lDMDjUZrjL10kkEeF7nAJ/Vb8XtJi+t7JKcfhVP7oDiy87fGA==",
   "success": true,
-  "projectFilePath": "/Users/emre/work/umschlag-backend/Umschlag-Backend.Core/Umschlag-Backend.Core.csproj",
+  "projectFilePath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Core\\Umschlag-Backend.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
