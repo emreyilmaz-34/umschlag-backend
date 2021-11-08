@@ -30,15 +30,17 @@ namespace Umschlag_Backend.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<AppDbContext>(options=> options.UseSqlServer(Configuration["ConnectionStrings:SqlConStr"].ToString()));
-            services.AddControllers();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            // services.AddSwaggerGen(c =>
-            // {
-            //     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Umschlag_Backend.API", Version = "v1" });
-            // });
+            services.AddDbContext<AppDbContext>(options => options.UseNpgsql(Configuration["ConnectionStrings:SqlConStr"].ToString(), o =>
+            {
+                o.MigrationsAssembly("Umschlag_Backend.Data"); 
+            }));
+            services.AddControllers();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Umschlag_Backend.API", Version = "v1" });
+            });
         }
-
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

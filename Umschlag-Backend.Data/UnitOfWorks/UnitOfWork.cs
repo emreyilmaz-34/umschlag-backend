@@ -12,7 +12,7 @@ namespace Umschlag_Backend.Data.UnitOfWorks
         private CategoryRepository _categoryRepository;
 
         public UnitOfWork(AppDbContext appDbContext)
-            =>_context = appDbContext;
+            => _context = appDbContext;
         public IProductRepository Products => _productRepository = _productRepository ?? new ProductRepository(_context); 
         public ICategoryRepository Categories => _categoryRepository = _categoryRepository ?? new CategoryRepository(_context);
         public void Commit()
