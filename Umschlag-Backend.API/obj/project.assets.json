@@ -1632,7 +1632,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.11",
+          "Microsoft.EntityFrameworkCore": "5.0.12",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.12",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10",
           "Umschlag-Backend.Core": "1.0.0"
         },

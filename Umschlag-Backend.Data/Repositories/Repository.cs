@@ -23,9 +23,8 @@ namespace Umschlag_Backend.Data.Repositories
             => await _dbSet.AddAsync(entity);
         public async Task AddRangeAsync(IEnumerable<TEntity> entities)
             => await _dbSet.AddRangeAsync(entities);
-
-        public IEnumerable<TEntity> Where(Expression<Func<TEntity, bool>> predicate)
-            => _dbSet.Where(predicate);
+        public async Task<IEnumerable<TEntity>> Where(Expression<Func<TEntity, bool>> predicate)
+            => await _dbSet.Where(predicate).ToListAsync();
         public async Task<IEnumerable<TEntity>> GetAllAsync()
             => await _dbSet.ToListAsync();
         public async Task<TEntity> GetByIdAsync(int id)
@@ -34,7 +33,6 @@ namespace Umschlag_Backend.Data.Repositories
             => _dbSet.Remove(entity);
         public void RemoveRange(IEnumerable<TEntity> entities)
             => _dbSet.RemoveRange(entities);
-
         public async Task<TEntity> SingleOrDefaultAsync(Expression<Func<TEntity, bool>> predicate)
             => await _dbSet.SingleOrDefaultAsync(predicate);
 

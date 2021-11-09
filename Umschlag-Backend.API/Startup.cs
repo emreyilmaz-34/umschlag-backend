@@ -1,19 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Umschlag_Backend.Data;
-using Microsoft.EntityFrameworkCore;
 using Umschlag_Backend.Core.UnitOfWork;
+using Umschlag_Backend.Data;
 using Umschlag_Backend.Data.UnitOfWorks;
 
 namespace Umschlag_Backend.API
@@ -31,9 +24,9 @@ namespace Umschlag_Backend.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddDbContext<AppDbContext>(options => options.UseNpgsql(Configuration["ConnectionStrings:SqlConStr"].ToString(), o =>
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:SqlConStr"].ToString(), o =>
             {
-                o.MigrationsAssembly("Umschlag_Backend.Data"); 
+                o.MigrationsAssembly("Umschlag-Backend.Data"); 
             }));
             services.AddControllers();
             services.AddSwaggerGen(c =>
