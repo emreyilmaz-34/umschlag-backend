@@ -7,7 +7,7 @@ namespace Umschlag_Backend.Core.Services
 {
     public interface ICategoryService:IService<Category>
     {
-        Task<Category> GetWithProductByIdAsync(int productId); // retunrn category with product
+        Task<Category> GetWithProductByIdAsync(int categoryId); // retunrn category with product
         
     }
 }

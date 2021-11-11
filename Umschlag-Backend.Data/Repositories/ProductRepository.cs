@@ -8,7 +8,7 @@ namespace Umschlag_Backend.Data.Repositories
     public class ProductRepository : Repository<Product>, IProductRepository
     {
         private AppDbContext _appDbContext { get => _context as AppDbContext; }
-        public ProductRepository(DbContext context) : base(context)
+        public ProductRepository(AppDbContext context) : base(context)
         {
 
         }

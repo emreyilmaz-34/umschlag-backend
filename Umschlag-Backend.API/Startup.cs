@@ -5,9 +5,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Umschlag_Backend.Core.Repositories;
+using Umschlag_Backend.Core.Services;
 using Umschlag_Backend.Core.UnitOfWork;
 using Umschlag_Backend.Data;
+using Umschlag_Backend.Data.Repositories;
 using Umschlag_Backend.Data.UnitOfWorks;
+using Umschlag_Backend.Service.Services;
 
 namespace Umschlag_Backend.API
 {
@@ -23,6 +27,12 @@ namespace Umschlag_Backend.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAutoMapper(typeof(Startup));
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IService<>), typeof(Service<>));
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IProductService, ProductService>();
+
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:SqlConStr"].ToString(), o =>
             {
