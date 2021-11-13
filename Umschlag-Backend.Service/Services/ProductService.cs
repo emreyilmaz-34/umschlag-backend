@@ -12,6 +12,7 @@ namespace Umschlag_Backend.Service.Services
         {
         }
         public async Task<Product> GetWithCategoryByIdAsync(int productId)
-            =>await _unitOfWork.Products.GetWithCategoryByIdAsync(productId);
+            => await _unitOfWork.Products.GetWithCategoryByIdAsync(productId);
+
     }
 }

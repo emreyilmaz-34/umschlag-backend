@@ -3,32 +3,35 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Umschlag_Backend.API.DTOs;
+using Umschlag_Backend.Core;
 using Umschlag_Backend.Core.Services;
 
 namespace Umschlag_Backend.API.Controllers
 {
-    public class ProductController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class CategoriesController : ControllerBase
     {
-        private readonly IProductService _productService;
+        private readonly ICategoryService _categoryService;
         private readonly IMapper _mapper;
-        public ProductController(IProductService productService, IMapper mapper)
+        public CategoriesController(ICategoryService categoryService, IMapper mapper)
         {
-            _productService = productService;
+            _categoryService = categoryService;
             _mapper = mapper;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var products = await _productService.GetAllAsync();
-            return Ok(_mapper.Map<IEnumerable<ProductDto>>(products));
+            var categories = await _categoryService.GetAllAsync();
+            return Ok(_mapper.Map<IEnumerable<CategoryDto>>(categories));
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var product = await _productService.GetByIdAsync(id);
-            return Ok(_mapper.Map<ProductDto>(product));
+            var category = await _categoryService.GetByIdAsync(id);
+            return Ok(_mapper.Map<CategoryDto>(category));
         }
 
         [HttpGet("{id}/products")]
@@ -37,7 +40,6 @@ namespace Umschlag_Backend.API.Controllers
             var category = await _categoryService.GetWithProductByIdAsync(id);
             return Ok(_mapper.Map<CategoryWithProductDto>(category));
         }
-
 
         [HttpPost]
         public async Task<IActionResult> Save(CategoryDto categoryDto)

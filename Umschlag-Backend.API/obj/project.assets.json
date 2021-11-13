@@ -1664,6 +1664,16 @@
           "bin/placeholder/Umschlag-Backend.Data.dll": {}
         }
       },
+      "Umschlag-Backend.Exception/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Umschlag-Backend.Exception.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Umschlag-Backend.Exception.dll": {}
+        }
+      },
       "Umschlag-Backend.Service/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -6144,6 +6154,11 @@
       "path": "../Umschlag-Backend.Data/Umschlag-Backend.Data.csproj",
       "msbuildProject": "../Umschlag-Backend.Data/Umschlag-Backend.Data.csproj"
     },
+    "Umschlag-Backend.Exception/1.0.0": {
+      "type": "project",
+      "path": "../Umschlag-Backend.Exception/Umschlag-Backend.Exception.csproj",
+      "msbuildProject": "../Umschlag-Backend.Exception/Umschlag-Backend.Exception.csproj"
+    },
     "Umschlag-Backend.Service/1.0.0": {
       "type": "project",
       "path": "../Umschlag-Backend.Service/Umschlag-Backend.Service.csproj",
@@ -6160,6 +6175,7 @@
       "Swashbuckle.AspNetCore >= 5.6.3",
       "Umschlag-Backend.Core >= 1.0.0",
       "Umschlag-Backend.Data >= 1.0.0",
+      "Umschlag-Backend.Exception >= 1.0.0",
       "Umschlag-Backend.Service >= 1.0.0"
     ]
   },
@@ -6195,6 +6211,9 @@
             },
             "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Data\\Umschlag-Backend.Data.csproj": {
               "projectPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Data\\Umschlag-Backend.Data.csproj"
+            },
+            "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Exception\\Umschlag-Backend.Exception.csproj": {
+              "projectPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Exception\\Umschlag-Backend.Exception.csproj"
             },
             "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Service\\Umschlag-Backend.Service.csproj": {
               "projectPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Service\\Umschlag-Backend.Service.csproj"

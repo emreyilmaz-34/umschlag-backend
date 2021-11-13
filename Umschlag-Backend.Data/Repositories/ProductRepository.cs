@@ -13,6 +13,7 @@ namespace Umschlag_Backend.Data.Repositories
 
         }
         public async Task<Product> GetWithCategoryByIdAsync(int productId)
-            => await _appDbContext.Products.Include(x=> x.Category).SingleOrDefaultAsync(x=> x.Id == productId);
+            => await _appDbContext.Products.Include(x => x.Category).SingleOrDefaultAsync(x => x.Id == productId);
+
     }
 }
