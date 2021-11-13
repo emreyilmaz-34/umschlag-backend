@@ -1,17 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 using Umscghlag.Web.Filters;
-using Umschlag_Backend.Core.Repositories;
-using Umschlag_Backend.Core.Services;
-using Umschlag_Backend.Core.UnitOfWork;
-using Umschlag_Backend.Data;
-using Umschlag_Backend.Data.Repositories;
-using Umschlag_Backend.Data.UnitOfWorks;
-using Umschlag_Backend.Service.Services;
+using Umschlag.Web.ApiService;
 
 namespace Umschlag.Web
 {
@@ -31,15 +25,10 @@ namespace Umschlag.Web
             services.AddAutoMapper(typeof(Startup));
             services.AddControllersWithViews();
 
-            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-            services.AddScoped(typeof(IService<>), typeof(Service<>));
-            services.AddScoped<ICategoryService, CategoryService>();
-            services.AddScoped<IProductService, ProductService>();
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:SqlConStr"].ToString(), o =>
+            services.AddHttpClient<CategoryApiService>(opt =>
             {
-                o.MigrationsAssembly("Umschlag-Backend.Data");
-            }));
+                opt.BaseAddress = new Uri(Configuration["baseUrl"]);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

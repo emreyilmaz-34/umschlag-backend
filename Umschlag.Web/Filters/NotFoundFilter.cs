@@ -2,26 +2,25 @@
 using Microsoft.AspNetCore.Mvc.Filters;
 using System.Linq;
 using System.Threading.Tasks;
+using Umschlag.Web.ApiService;
 using Umschlag.Web.DTOs;
-using Umschlag_Backend.Core.Services;
 
 namespace Umscghlag.Web.Filters
 {
     public class NotFoundFilter:ActionFilterAttribute
     {
-        private readonly ICategoryService _categoryService;
+        private readonly CategoryApiService _categoryApiService;
 
-        public NotFoundFilter(ICategoryService categoryService)
+        public NotFoundFilter(CategoryApiService categoryApiService)
         {
-            // if filter waiting for a DI you had to add as a service that filter (scoped) at Startup.cs
-            _categoryService = categoryService;
+            _categoryApiService = categoryApiService;
         }
 
         public async override Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
             int id = (int)context.ActionArguments.Values.FirstOrDefault();
 
-            var category = await _categoryService.GetByIdAsync(id);
+            var category = await _categoryApiService.GetByIdAsync(id);
 
             if (category != null)
                 await next();
