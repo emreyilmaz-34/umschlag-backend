@@ -15,6 +15,7 @@ namespace Umschlag_Backend.API.Filters
 
         public NotFoundFilter(IProductService productService)
         {
+            // if filter waiting for a DI you had to add as a service that filter (scoped) at Startup.cs
             _productService = productService;
         }
 

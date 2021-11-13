@@ -30,7 +30,6 @@ namespace Umschlag_Backend.API.Controllers
         public async Task<IActionResult> GetById(int id)
             => Ok(_mapper.Map<ProductDto>(await _productService.GetByIdAsync(id)));
 
-        [ValidationFilter]
         [HttpPost]
         public async Task<IActionResult> Save(ProductDto productDto)
             => Created(string.Empty, _mapper.Map<ProductDto>(await _productService.AddAsync(_mapper.Map<Product>(productDto))));

@@ -1,11 +1,14 @@
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
 using Umschlag_Backend.API.Filters;
 using Umschlag_Backend.Core.Repositories;
 using Umschlag_Backend.Core.Services;
@@ -13,7 +16,9 @@ using Umschlag_Backend.Core.UnitOfWork;
 using Umschlag_Backend.Data;
 using Umschlag_Backend.Data.Repositories;
 using Umschlag_Backend.Data.UnitOfWorks;
+using Umschlag_Backend.Exception.DTOs;
 using Umschlag_Backend.Service.Services;
+using Umschlag_Backend.API.Extensions;
 
 namespace Umschlag_Backend.API
 {
@@ -41,7 +46,12 @@ namespace Umschlag_Backend.API
             {
                 o.MigrationsAssembly("Umschlag-Backend.Data"); 
             }));
-            services.AddControllers();
+
+            services.AddControllers(options =>
+            {
+                options.Filters.Add(new ValidationFilter());
+            });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Umschlag_Backend.API", Version = "v1" });
@@ -61,6 +71,8 @@ namespace Umschlag_Backend.API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Umschlag_Backend.API v1"));
             }
+
+            app.UseCustomException();
 
             app.UseHttpsRedirection();
 
