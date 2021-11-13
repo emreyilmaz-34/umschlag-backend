@@ -28,12 +28,6 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Core\\Umschlag-Backend.Core.csproj": {
-                "projectPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Core\\Umschlag-Backend.Core.csproj"
-              },
-              "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Data\\Umschlag-Backend.Data.csproj": {
-                "projectPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Data\\Umschlag-Backend.Data.csproj"
-              },
               "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Exception\\Umschlag-Backend.Exception.csproj": {
                 "projectPath": "C:\\Users\\EMRE\\Desktop\\work\\umschlag-backend\\Umschlag-Backend.Exception\\Umschlag-Backend.Exception.csproj"
               },

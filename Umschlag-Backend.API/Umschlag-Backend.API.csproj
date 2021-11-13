@@ -18,8 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Umschlag-Backend.Core\Umschlag-Backend.Core.csproj" />
-    <ProjectReference Include="..\Umschlag-Backend.Data\Umschlag-Backend.Data.csproj" />
     <ProjectReference Include="..\Umschlag-Backend.Exception\Umschlag-Backend.Exception.csproj" />
     <ProjectReference Include="..\Umschlag-Backend.Service\Umschlag-Backend.Service.csproj" />
   </ItemGroup>
