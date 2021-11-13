@@ -10,3 +10,5 @@ Umschlag-Backend.Service/obj/Debug/
 .DS_Store
 Umschlag.Web/bin
 Umschlag.Web/obj
+Umschlag-Backend.Exception/obj
+.vs
