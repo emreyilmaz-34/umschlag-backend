@@ -8,3 +8,5 @@ Umschlag-Backend.Data/obj/Debug/
 Umschlag-Backend.Service/bin/
 Umschlag-Backend.Service/obj/Debug/
 .DS_Store
+Umschlag.Web/bin
+Umschlag.Web/obj
